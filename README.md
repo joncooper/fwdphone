@@ -1,5 +1,5 @@
 
-# Forward phone calls and SMSes from a deprecated mobile phone number to a new one.
+## Forward phone calls and SMSes from a deprecated mobile phone number to a new one.
 
 I moved from NYC to SF fairly recently and wanted to get a local mobile phone number, but without losing the ability for people that had my old one to get in touch with me. 
 
@@ -31,10 +31,9 @@ It will cost, at the moment (March 2011), assuming US numbers:
 
 I am hosting this on Heroku. If you're doing the same and have bundler and the Heroku gem installed:
 
-1. git clone
+1. git clone git@github.com:joncooper/fwdphone.git
 1. Edit messages.rb
 1. heroku create
-1. bundle install
 1. git push heroku master
 
 ### Configure phone endpoints
