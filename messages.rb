@@ -1,5 +1,6 @@
-OLD_NUMBER = ENV['OLD_NUMBER'] # This must be provisioned on Twilio
-NEW_NUMBER = ENV['NEW_NUMBER']
+OLD_NUMBER        = ENV['OLD_NUMBER'] # This must be provisioned on Twilio
+NEW_NUMBER        = ENV['NEW_NUMBER']
+NEW_NUMBER_SPOKEN = ENV['NEW_NUMBER_SPOKEN']
 
 # You'll get a better rendition of your number if you spell it out digit
 # by digit, i.e. "four one five, eight eight eight, one one one one", etc.
@@ -7,8 +8,8 @@ NEW_NUMBER = ENV['NEW_NUMBER']
 GREETING_MESSAGE = <<EOT
 Hello. Jon Cooper here. 
 I have a new number. 
-#{NEW_NUMBER}.
-That's #{NEW_NUMBER}. 
+#{NEW_NUMBER_SPOKEN}.
+That's #{NEW_NUMBER_SPOKEN}.
 To be connected now, press 1. 
 Press any other key to repeat this message.
 EOT
