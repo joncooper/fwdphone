@@ -4,7 +4,7 @@ class TwiML
   def self.phone_greeting
     builder = Nokogiri::XML::Builder.new do |xml|
       xml.Response {
-        xml.Gather(:numDigits => 1) {
+        xml.Gather(:numDigits => 1, :method => 'GET') {
           xml.Say GREETING_MESSAGE
         }
         xml.Redirect
